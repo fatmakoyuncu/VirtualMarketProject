@@ -1,0 +1,364 @@
+.container{
+    display: flex;
+    width: 100%;
+
+    .row{
+        display: flex;
+        width: 100%;
+
+        .col{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                background:  #8cd9b3;
+
+                .left{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 20px;
+
+                    .hamburger{
+                        margin: 5px 20px;
+
+                        svg{
+                            fill: white;
+                        }
+                    }:hover{
+                        cursor: pointer;
+                    }
+
+                    .brand{
+                        margin-left: 50px;
+
+                        h1{
+                            font-size: 25px;
+                            font-family: 'Bangers', cursive;
+                            letter-spacing: 8px;
+                        }
+                    }
+                }
+
+                .middle{
+                    display: flex;
+
+                    .searchbar{
+                        display: flex;
+                        align-items: center;
+
+                        input{
+                            padding: 7px 10px;
+                            border: none;
+                            border-radius: 5px;
+                            width: 250px;
+                            outline: none;
+                        }
+
+                        button{
+                            border: none;
+                            outline: none;
+                            background: none;
+                            padding: 5px;
+
+                            svg{
+                                fill: rgb(80, 78, 78);
+                            }:hover{
+                                cursor: pointer;
+                                width: 25px;
+                                height: 25px;
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+
+                .right{
+                    display: flex;
+                    align-items: center;
+
+                    .login{
+                        margin: 0px 5px;
+                        
+                        button{
+                            outline: none;
+                            border: none;
+                            background: none;
+                            
+
+                            p{
+                                margin: 0px;
+                                padding: 8px 10px;
+                                color: black;
+                                font-size: 15px;
+                                font-weight: bold;
+                                font-family: 'Balsamiq Sans', cursive;
+                            }:hover{
+                                cursor: pointer;
+                                background: rgb(248, 247, 247);
+                                border-radius: 7px;
+                                box-shadow: 0 2px 4px gray;
+                            }
+                        }
+
+                    }
+
+                    hr{
+                        border: none;
+                        border-left: 1px solid black;
+                        height: 30px;
+                         
+                    }
+
+                    .singup{
+                        margin: 0px 5px;
+                        
+                        button{
+                            outline: none;
+                            border: none;
+                            background: none;
+                            border-radius: 7px;
+
+                            p{
+                                margin: 0px;
+                                padding: 8px 10px;
+                                color: black;
+                                font-size: 15px;
+                                font-weight: bold;
+                                font-family: 'Balsamiq Sans', cursive;
+                            }:hover{
+                                cursor: pointer;
+                                background: rgb(248, 247, 247);
+                                border-radius: 7px;
+                                box-shadow: 0 2px 4px gray;
+                            }
+                        }
+                    }
+
+                    .cart{
+                        display: flex;
+                        margin: 0px 40px 0px 20px;
+
+                        button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0px 15px;
+                            outline: none;
+                            border: none;
+                            background: white;
+                            border-radius: 7px;
+                            box-shadow: 0 2px 4px gray;
+
+                            p{
+                                padding-right: 5px;
+                                font-size: 15px;
+                                font-family: 'Balsamiq Sans', cursive;
+                                font-weight: bold;
+                                color: #8cd9b3;
+                            }
+
+                            svg{
+                                fill: rgb(80, 78, 78);
+                            }
+                        }:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+            }
+
+            .main{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .container-bottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    width: 80%;
+
+
+                    .row-bottom{
+                        width: 80%;
+                        display: flex;
+
+                        .col-bottom{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .main-right{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                img{
+                                    margin-top: 50px;
+                                  }
+                  
+                                  .product{
+                                      width: 100%;
+                                    margin-top: 50px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                  
+                                    hr{
+                                        width: 100%;
+                                    }
+                  
+                                       .product-list{
+                                          display: flex;
+                                          align-items: center;
+                                          justify-content: space-between;
+                                          margin-top: 20px;
+                           
+                                           .info{
+                                              display: flex;
+                                              flex-direction: column;
+                                              align-items: center;
+                                              justify-content: center;
+                                              border: 1px solid #f1f1f1;
+                                              background: white;
+                                              border-radius: 4px;
+                  
+                                              p{
+                                              font-size: 18px;
+                                              font-family: Montserrat;
+                                              }
+                  
+                                              hr{
+                                              width: 90%;
+                                              }
+                  
+                                              .price{
+                                               display: flex;
+                                               align-items: center;
+                                               justify-content: space-between;
+                                               width: 80%;
+                  
+                                              .p-sale{
+                                               background: hsla(0, 86%, 57%, 1);
+                                               padding: 5px;
+                                               border-radius: 3px;
+                                               color: white;
+                                               font-size: 15px;
+                                               }
+                  
+                                               .p-price{
+                                                background: hsla(145, 63%, 40%,1);
+                                                padding: 8px 15px 8px 15px;
+                                                border-radius: 3px;
+                                                 color: white;
+                                               }
+                                              }
+                                          }
+                                      }
+                  
+                                      .add{
+                                       display: flex;
+                                       align-items: center;
+                                       justify-content: center;
+                                       margin-top: 10px;
+                                       margin-bottom: 10px;
+                  
+                                       button{
+                                       width: 100%;
+                                       height: 45px;
+                                       border:none;
+                                       outline: none;
+                                       background: hsla(56, 92%, 53%,0.8);
+                                       border-radius: 3px;
+                                       font-size: 18px;
+                                       color: rgb(78, 78, 78);
+                                       font-family:  Montserrat;
+                                       font-weight: bold;
+                                       }
+                  
+                                      }
+                                  }
+                  
+                                  
+                                  .bottom{
+                                  width: 95%;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: space-between;
+                                  background: rgb(218, 216, 216);
+                                  border-radius: 5px; 
+                                  padding: 20px;
+                                  margin-top: 30px;
+                                  margin-bottom: 30px;
+                                  
+                                  .info{
+                                      display: flex;
+                                      align-items: center;
+                                      justify-content: space-between;
+                  
+                                      p{
+                                          padding-left: 10px;
+                                      }
+                                  }
+                                  }
+                            }
+
+                            .productArray{
+                                display: flex;
+                                flex-wrap: wrap;
+                    
+                                .info{
+                                 margin-top: 0px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                background: white;
+                                width: 300px;
+                                margin: 20px;
+                    
+                                
+                    
+                                  .nameArray{
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                      }
+                                    hr{
+                                    width: 90%;
+                                    }
+                    
+                                    .priceArray{
+                                    background: rgb(100, 194, 115);
+                                    padding: 13px 70px;
+                                    border-radius: 5px;
+                                    color: white;
+                                     }
+                    
+                                    .addArray{
+                                    margin-top: 40px;
+                                    background: #fffb78;
+                                    border-radius: 5px;
+                                    width: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding-top: 15px;
+                                    padding-bottom: 15px;
+                                    color: rgb(58, 56, 56);
+                                    }
+                                }
+                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
