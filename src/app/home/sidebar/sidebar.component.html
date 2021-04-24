@@ -1,2 +1,8 @@
-<p>sidebar works!</p>
-<div class="pro" *ngFor="let p of productList">{{p.product_name}}</div>
+<div class="container">
+    <div class="row">
+        <div class="category" (click) = "getProduct(c)" *ngFor="let c of categoryList">
+            <img [src]="'http://localhost:3000/categories/'+ c.id" style="width: 40px; height: 40px;">
+            <p>{{c.category_name}}</p>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 .container{
     display: flex;
     width: 100%;
+    user-select: none;
 
     .row{
         display: flex;
@@ -17,6 +18,9 @@
                 justify-content: space-between;
                 width: 100%;
                 background:  #8cd9b3;
+                position: sticky;
+                z-index: 20;
+                top: 0;
 
                 .left{
                     display: flex;
@@ -175,14 +179,13 @@
 
             .main{
                 display: flex;
-                justify-content: space-between;
-                width: 100%;
 
                 .container-bottom{
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
                     width: 80%;
+                    margin-left: 200px;
 
 
                     .row-bottom{
@@ -310,51 +313,58 @@
                                   }
                             }
 
-                            .productArray{
-                                display: flex;
-                                flex-wrap: wrap;
-                    
-                                .info{
-                                 margin-top: 0px;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                background: white;
-                                width: 300px;
-                                margin: 20px;
-                    
-                                
-                    
-                                  .nameArray{
-                                    font-size: 20px;
-                                    font-weight: bold;
-                                      }
-                                    hr{
-                                    width: 90%;
-                                    }
-                    
-                                    .priceArray{
-                                    background: rgb(100, 194, 115);
-                                    padding: 13px 70px;
-                                    border-radius: 5px;
-                                    color: white;
-                                     }
-                    
-                                    .addArray{
-                                    margin-top: 40px;
-                                    background: #fffb78;
-                                    border-radius: 5px;
-                                    width: 90%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    padding-top: 15px;
-                                    padding-bottom: 15px;
-                                    color: rgb(58, 56, 56);
-                                    }
+                         
+                        }
+
+                        .productArray{
+                            display: flex;
+                            flex-wrap: wrap;
+                
+                            .info{
+                             margin-top: 0px;
+                             display: flex;
+                             flex-direction: column;
+                             align-items: center;
+                             background: white;
+                             width: 300px;
+                             margin: 20px;
+                
+                            
+                
+                              .nameArray{
+                                font-size: 20px;
+                                font-weight: bold;
+                                  }
+                                hr{
+                                width: 90%;
                                 }
-                    
+                
+                                .priceArray{
+                                background: #df4831;
+                                padding: 13px 70px;
+                                border-radius: 5px;
+                                color: white;
+                                }
+                
+                                button{
+                                    .addArray{
+                                        margin-top: 40px;
+                                        background: #aadb47;
+                                        border-radius: 5px;
+                                        width: 90%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding-top: 15px;
+                                        padding-bottom: 15px;
+                                        color: rgb(58, 56, 56);
+                                        }
+                                        :hover{
+                                            cursor: pointer;
+                                        }
+                                }
                             }
+                
                         }
                     }
                 }
