@@ -4,14 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './home/sidebar/sidebar.component';
-import { DialogComponent } from './dialog/dialog.component';
+// import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SidebarComponent,
-    DialogComponent
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
