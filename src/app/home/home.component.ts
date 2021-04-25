@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { Product } from '../models/product';
+import { CartService } from '../services/cart.service';
 import { ProductService } from '../services/product.service';
 
 @Component({
@@ -16,7 +17,7 @@ export class HomeComponent implements OnInit {
   open: boolean = true
   addProduct: string
 
-  constructor(private productService:ProductService, private matDialog:MatDialog) { }
+  constructor(private productService:ProductService, private matDialog:MatDialog, private cartService: CartService) { }
 
   ngOnInit(): void {
     this.productArray = [
@@ -35,6 +36,8 @@ export class HomeComponent implements OnInit {
   }
 
   openDialog(product:Product){
+
+    this.cartService.addToCart(product)
 
     this.addProduct = product.product_name
     console.log(this.addProduct);

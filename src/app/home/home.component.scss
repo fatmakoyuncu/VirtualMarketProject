@@ -347,21 +347,22 @@
                                 }
                 
                                 button{
+                                    margin-top: 40px;
+                                    background: #aadb47;
+                                    border-radius: 5px;
+                                    width: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    outline: none;
+                                    border: none;
                                     .addArray{
-                                        margin-top: 40px;
-                                        background: #aadb47;
-                                        border-radius: 5px;
-                                        width: 90%;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        padding-top: 15px;
-                                        padding-bottom: 15px;
                                         color: rgb(58, 56, 56);
-                                        }
-                                        :hover{
+                                        font-weight: bold;
+                                    }
+                                    :hover{
                                             cursor: pointer;
-                                        }
+                                    }
                                 }
                             }
                 

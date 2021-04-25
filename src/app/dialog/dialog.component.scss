@@ -1,0 +1,32 @@
+mat-dialog-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p{
+        display: flex;
+        align-items: flex-start;
+        max-width: 500px;
+    }
+    
+}
+
+mat-dialog-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px 10px 20px;
+
+    button{
+        border: none;
+        outline: none;
+        padding: 10px;
+        width: 100px;
+        margin: 10px;
+        margin-bottom: 0px;
+    }:hover{
+        cursor: pointer;
+    }
+}
+
+
