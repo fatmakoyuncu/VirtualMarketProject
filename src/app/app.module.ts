@@ -9,6 +9,8 @@ import { DialogComponent } from './dialog/dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartComponent } from './cart/cart.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FilterPipe } from './pipe/filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path:'', component:HomeComponent },
@@ -21,14 +23,16 @@ const routes: Routes = [
     HomeComponent,
     SidebarComponent,
     DialogComponent,
-    CartComponent
+    CartComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

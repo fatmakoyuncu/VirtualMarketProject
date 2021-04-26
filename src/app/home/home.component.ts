@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
   category: any
   open: boolean = true
   addProduct: string
+  filterText: string;
+  productList
 
   constructor(private productService:ProductService, private matDialog:MatDialog, private cartService: CartService) { }
 
@@ -25,6 +27,7 @@ export class HomeComponent implements OnInit {
       { name: "Kıyma", price: 50, sale: "%12", img: "https://market.eticaret.webdeneme.com/siteler/market/image/cache/catalog/kiyma-250x250.jpg" },
       { name: "Sek Günlüt Süt Cam Şişe 1 lt", price: 11, sale: "%10", img: "https://market.eticaret.webdeneme.com/siteler/market/image/cache/catalog/sek-gunlut-sut-cam-sise-1-lt-250x250.jpg" },
     ]
+    const product = this.productService.getProduct().subscribe(i => this.productList = i)
   }
 
   fromChild(data){
