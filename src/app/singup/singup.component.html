@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <div class="header">
+                <button class="login" routerLink="/login">Giriş Yap</button>
+                <button class="singup">Kayıt Ol</button>
+            </div>
+            <div class="col">
+                <div class="form">
+                    <form [formGroup]="singUp">
+                        <div class="username">
+                            <p>E-Mail</p>
+                            <input type="email" formControlName ="email">
+                            <span *ngIf="!singUp.get('email').value && singUp.get('email').touched " class="error-block">
+                                Lütfen geçerli bir e-mail adresi giriniz.
+                            </span>
+                        </div>
+                        <div class="password">
+                            <p>Şifre</p>
+                            <input type="password" formControlName="password">
+                            <span
+                                *ngIf="!singUp.get('password').valid && singUp.get('password').touched || singUp.get('password').hasError('minLength')">
+                                <span *ngIf="singUp.get('password').errors['required']">Lütfen geçerli bir şifre giriniz.</span>
+                            </span>
+                        </div>
+                        <div class="confirm">
+                            <p>Şifre Tekrar</p>
+                            <input type="password" formControlName="confirm">
+                            <span
+                                *ngIf="!singUp.get('password').valid && singUp.get('password').touched || singUp.get('password').hasError('minLength')">
+                                Lütfen geçerli bir şifre giriniz.
+                            </span>
+                            <span *ngIf="singUp.hasError('notmatch') && singUp.get('confirm').valid || singUp.get('confirm').hasError('minlength')">
+                                Şifreler eşleşmedi.
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="sing">
+                    <button>Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

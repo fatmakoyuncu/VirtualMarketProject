@@ -10,11 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartComponent } from './cart/cart.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FilterPipe } from './pipe/filter.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { SingupComponent } from './singup/singup.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent },
-  {path:'cart', component:CartComponent}
+  {path:'cart', component:CartComponent},
+  {path:'login', component:LoginComponent},
+  {path:'singup', component:SingupComponent}
 ]
 
 @NgModule({
@@ -24,7 +28,9 @@ const routes: Routes = [
     SidebarComponent,
     DialogComponent,
     CartComponent,
-    FilterPipe
+    FilterPipe,
+    LoginComponent,
+    SingupComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +38,8 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatDialogModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

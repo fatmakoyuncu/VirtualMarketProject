@@ -43,13 +43,13 @@
                     </div>
                 </div>
                 <div class="right">
-                    <div class="login">
+                    <div class="login" routerLink="/login">
                         <button>
                             <p>Oturum Aç</p>
                         </button>
                     </div>
                     <hr>
-                    <div class="singup">
+                    <div class="singup" routerLink="/singup">
                         <button>
                             <p>Kayıt Ol</p>
                         </button>
@@ -84,7 +84,7 @@
                             style="width: 130px; height: 130px; border-radius: 50%;">
                         <p>{{item.product.product_name}}</p>
                         <p>{{item.quantity}}</p>
-                        <p>{{item.quantity*item.product.price}}</p>
+                        <p>{{item.quantity*item.product.price}}&#8378;</p>
                         <div class="delete">
                             <button (click)="removeFromCart(item.product)">Sil</button>
                         </div>
